@@ -1,0 +1,247 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Header */
+
+header{
+    background:#2563eb;
+    color:#fff;
+    padding:20px 0;
+}
+
+header h1{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+nav{
+    text-align:center;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 10px;
+    padding:10px 15px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#1d4ed8;
+}
+
+/* Hero */
+
+.hero{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 24px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* Cards */
+
+.card{
+    background:#fff;
+    border-radius:12px;
+    padding:25px;
+    margin:20px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+/* Dashboard */
+
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.dashboard .card{
+    text-align:center;
+}
+
+.dashboard h1{
+    color:#2563eb;
+    font-size:40px;
+}
+
+/* Forms */
+
+.form-box{
+    max-width:500px;
+    margin:40px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.form-box h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#2563eb;
+}
+
+.form-box label{
+    display:block;
+    margin-top:15px;
+    font-weight:600;
+}
+
+.form-box input{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.form-box button{
+    width:100%;
+    margin-top:20px;
+}
+
+/* Tables */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+}
+
+table th{
+    background:#2563eb;
+    color:#fff;
+}
+
+table th,
+table td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+/* Lists */
+
+ul{
+    margin:20px;
+}
+
+ul li{
+    margin-bottom:10px;
+}
+
+/* Lesson Content */
+
+.card p{
+    margin-bottom:15px;
+}
+
+/* Footer */
+
+footer{
+    margin-top:50px;
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header h1{
+    font-size:24px;
+}
+
+nav a{
+    display:block;
+    margin:8px 0;
+}
+
+.hero h2{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.dashboard{
+    grid-template-columns:1fr;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
+}
+
+/* Smooth Animation */
+
+.card{
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
